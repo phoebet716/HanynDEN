@@ -10,7 +10,6 @@ parser.add_argument(
     "--text",
     type=str,
     required=False,
-    default="A hammer is hitting a wooden surface",
     help="Text prompt to the model for audio generation",
 )
 
@@ -61,7 +60,6 @@ parser.add_argument(
 
 parser.add_argument(
     "-n",
-    "--n_candidate_gen_per_text",
     type=int,
     required=False,
     default=3,
@@ -71,7 +69,6 @@ parser.add_argument(
 parser.add_argument(
     "--seed",
     type=int,
-    required=False,
     default=42,
     help="Change this value (any integer number) will lead to a different generation result.",
 )
